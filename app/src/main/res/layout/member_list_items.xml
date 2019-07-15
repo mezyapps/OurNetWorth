@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/white"
+        android:elevation="5dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="5dp">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="120dp"
+       android:weightSum="5"
+       android:orientation="horizontal">
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profileimage_re"
+        android:layout_width="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1.5"
+        android:layout_height="80dp"
+        android:src="@drawable/defaultimage"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/colorPrimary"/>
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_weight="3.5"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <TextView
+        android:fontFamily="calibri"
+        android:layout_marginTop="5dp"
+        android:id="@+id/name_re"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:fontFamily="calibri"
+        android:layout_below="@+id/name_re"
+        android:layout_marginTop="5dp"
+        android:id="@+id/category_re"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="category:"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp" />
+            <TextView
+                android:layout_below="@id/category_re"
+                android:fontFamily="calibri"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="1dp"
+                android:id="@+id/company_re"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="company:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp" />
+        <TextView
+            android:fontFamily="calibri"
+            android:id="@+id/mobile_no_re"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/company_re"
+            android:text="mobile:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+        </RelativeLayout>
+    </LinearLayout>
+   </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_marginTop="2dp"-->
+        <!--android:layout_marginBottom="2dp"-->
+        <!--android:background="@color/colorPrimary"/>-->
+</RelativeLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.EditProfile">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profileimage_edit_pr"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/defaultimage"
+                app:civ_border_color="@color/colorPrimary"
+                app:civ_border_width="2dp" />
+
+            <ImageView
+                android:id="@+id/updateimage_btn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/camera_iconn"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="120dp"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+<TextView
+    android:textColor="@color/colorAccent"
+    android:layout_marginLeft="7dp"
+    android:textStyle="italic"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Name"/>
+        <EditText
+            android:id="@+id/full_name_edit_pr"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/editextbackground"
+           android:paddingLeft="2dp"
+            android:singleLine="true"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimary" />
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:layout_marginLeft="7dp"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Category"/>
+        <EditText
+            android:id="@+id/category_edit_pr"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/editextbackground"
+            android:paddingLeft="2dp"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimary" />
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:layout_marginLeft="7dp"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Company Name"/>
+        <EditText
+            android:id="@+id/company_name_edit_pr"
+            android:layout_width="match_parent"
+            android:textSize="15sp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/editextbackground"
+            android:paddingLeft="2dp"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimary" />
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:layout_marginLeft="7dp"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mobile No."/>
+        <EditText
+            android:id="@+id/mobile_edit_pr"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:layout_margin="5dp"
+            android:background="@drawable/editextbackground"
+            android:paddingLeft="2dp"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimary" />
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:layout_marginLeft="7dp"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email Address"/>
+        <EditText
+            android:id="@+id/email_edit_pr"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:textSize="15sp"
+            android:background="@drawable/editextbackground"
+            android:paddingLeft="2dp"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimary" />
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:layout_marginLeft="7dp"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Business Keyword"/>
+        <EditText
+            android:id="@+id/business_keyword_ed_pr"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/editextbackground"
+            android:paddingLeft="2dp"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimary" />
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:layout_marginLeft="7dp"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address"/>
+        <EditText
+            android:id="@+id/address_edit_pr"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:layout_margin="5dp"
+            android:background="@drawable/editextbackground"
+            android:paddingLeft="2dp"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimary" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="5dp"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/edit_profile_submit_button"
+            android:background="@drawable/btnbackground"
+            android:shadowColor="@android:color/transparent"
+            android:text="Update Profile" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+    </LinearLayout>
+</ScrollView>
+</FrameLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+            <item
+                android:id="@+id/meber_nav"
+                android:icon="@drawable/membaer_icon"
+                android:title="All Members" />
+            <item
+                android:id="@+id/give_nav"
+                android:icon="@drawable/favorited_icon"
+                android:title="All Give List" />
+            <item
+                android:id="@+id/ask_nav"
+                android:icon="@drawable/ask_iconn"
+                android:title="All Ask List" />
+            <item
+                android:id="@+id/logout_nav"
+                android:icon="@drawable/logout_icon"
+                android:title="Logout" />
+
+    <item android:title="Support">
+        <menu>
+            <item
+                android:id="@+id/faq"
+                android:icon="@drawable/menu_faq_icon"
+                android:title="FAQ" />
+            <item
+                android:id="@+id/email"
+                android:icon="@drawable/email_icon"
+                android:title="Email" />
+            <item
+                android:id="@+id/call"
+                android:icon="@drawable/contact_icon"
+                android:title="Call" />
+        </menu>
+    </item>
+    <item android:title="Others">
+        <menu>
+            <item
+                android:id="@+id/share"
+                android:icon="@drawable/share_icon"
+                android:title="Share" />
+            <item
+                android:id="@+id/rateApp"
+                android:icon="@drawable/rate_icon"
+                android:title="Rate App" />
+            <item
+                android:id="@+id/appInfo"
+                android:icon="@drawable/info_icon"
+                android:title="App Info" />
+        </menu>
+    </item>
+</menu>

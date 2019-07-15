@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.MemberDetail">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/white"
+        android:elevation="5dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5"
+            android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profileimage_detail"
+                android:layout_width="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.5"
+                android:layout_height="100dp"
+                android:src="@drawable/defaultimage"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/colorPrimary"/>
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.5"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:fontFamily="calibri"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="top"
+                        android:id="@+id/name_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Name:"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:textSize="17sp" />
+
+
+                    <TextView
+                        android:fontFamily="calibri"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/name_detail"
+                        android:id="@+id/category_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="category:"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:fontFamily="calibri"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@id/category_detail"
+                        android:id="@+id/company_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="company"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:fontFamily="calibri"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@id/company_detail"
+                        android:id="@+id/email_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:text="Email:"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:fontFamily="calibri"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@id/email_detail"
+                        android:id="@+id/mobile_no_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="Mobile:"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/white"
+            android:elevation="5dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:gravity="center_vertical"
+                android:textAlignment="center"
+                android:background="@color/colorPrimary"
+                android:layout_weight="1"
+                android:textColor="#fff"
+                android:id="@+id/give_id_form_detail"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:text="GIVE"/>
+            <TextView
+                android:gravity="center_vertical"
+                android:textAlignment="center"
+                android:background="@color/colorAccent"
+                android:layout_weight="1"
+                android:id="@+id/ask_id_form_detail"
+                android:layout_width="0dp"
+                android:textColor="#fff"
+                android:layout_height="40dp"
+                android:text="ASK"/>
+        </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--give start-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/give_form_layout_detail">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_give_detail_give"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:textStyle="italic"
+                    android:id="@+id/no_give_added"
+                    android:textColor="@color/colorPrimary"/>
+
+            </LinearLayout>
+
+          <!--give end-->
+
+          <!--ask page strat-->
+            <LinearLayout
+                android:id="@+id/ask_form_layout_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView_give_detail_ask"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:textStyle="italic"
+                    android:id="@+id/no_ask_added"
+                    android:textColor="@color/colorPrimary"/>
+            </LinearLayout>
+            <!--ask end-->
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

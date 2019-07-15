@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.GiveAndAsk">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+       <LinearLayout
+           android:weightSum="2"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_margin="@dimen/activity_horizontal_margin">
+          <TextView
+              android:gravity="center_vertical"
+              android:textAlignment="center"
+              android:background="@color/colorPrimary"
+              android:layout_weight="1"
+              android:textColor="#fff"
+              android:id="@+id/give_id_form"
+              android:layout_width="0dp"
+              android:layout_height="40dp"
+              android:text="GIVE"/>
+           <TextView
+               android:gravity="center_vertical"
+               android:textAlignment="center"
+               android:background="@color/colorAccent"
+               android:layout_weight="1"
+               android:id="@+id/ask_id_form"
+               android:layout_width="0dp"
+               android:textColor="#fff"
+               android:layout_height="40dp"
+               android:text="ASK"/>
+       </LinearLayout>
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:scrollbars="vertical">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+           <!--give form stat-->
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:id="@+id/give_form_layout">
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/colorPrimary"
+                   android:text="ENTER GIVE"
+                   android:textStyle="italic"
+                   android:textSize="16sp"
+                   android:textAlignment="center"/>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="45dp"
+               android:orientation="horizontal"
+               android:weightSum="2"
+               android:background="@drawable/editextbackground"
+               android:layout_margin="@dimen/activity_horizontal_margin">
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="40dp"
+                   android:layout_margin="@dimen/activity_horizontal_margin"
+                   android:layout_weight="1"
+                   android:gravity="center_vertical"
+                   android:text="Date"
+                   android:textSize="15dp"
+                   android:layout_gravity="center_vertical"
+                   android:textColor="@color/colorPrimary" />
+
+               <TextView
+                   android:id="@+id/date_give"
+                   android:layout_width="0dp"
+                   android:layout_height="40dp"
+                   android:layout_weight="1"
+                   android:background="@null"
+                   android:gravity="center_vertical"
+                   android:hint="Select Date.."
+                   android:textSize="15dp"
+                   android:layout_gravity="center_vertical"
+                   android:textColor="#000"/>
+           </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+           <android.support.design.widget.TextInputLayout
+               android:layout_width="match_parent"
+               android:background="@drawable/editextbackground"
+               android:layout_height="match_parent"
+               android:paddingLeft="10dp"
+               android:layout_margin="@dimen/activity_horizontal_margin">
+
+               <android.support.design.widget.TextInputEditText
+                   android:layout_width="match_parent"
+                   android:layout_height="40dp"
+                   android:singleLine="true"
+                   android:id="@+id/contactname_give"
+                   android:textSize="15dp"
+                   android:background="@android:color/transparent"
+                   android:hint="Enter Name" />
+
+           </android.support.design.widget.TextInputLayout>
+
+
+           <android.support.design.widget.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:paddingLeft="10dp"
+               android:background="@drawable/editextbackground"
+               android:layout_margin="@dimen/activity_horizontal_margin">
+
+               <android.support.design.widget.TextInputEditText
+                   android:layout_width="match_parent"
+                   android:layout_height="40dp"
+                   android:singleLine="true"
+                   android:background="@android:color/transparent"
+                   android:textSize="15dp"
+                   android:id="@+id/comanyname_give"
+                   android:hint="Enter Company Name" />
+
+           </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:background="@drawable/editextbackground"
+        android:layout_margin="@dimen/activity_horizontal_margin">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:singleLine="true"
+            android:background="@android:color/transparent"
+            android:textSize="15dp"
+            android:id="@+id/category_give"
+            android:hint="Enter Category" />
+
+    </android.support.design.widget.TextInputLayout>
+
+           <android.support.design.widget.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="@drawable/editextbackground"
+               android:layout_margin="@dimen/activity_horizontal_margin">
+
+               <android.support.design.widget.TextInputEditText
+                   android:layout_width="match_parent"
+                   android:layout_height="40dp"
+                   android:singleLine="true"
+                   android:textSize="15dp"
+                   android:paddingLeft="10dp"
+                   android:id="@+id/location_give"
+                   android:background="@android:color/transparent"
+                   android:hint="Enter Location" />
+
+           </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/editextbackground"
+        android:layout_margin="@dimen/activity_horizontal_margin">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:singleLine="true"
+            android:textSize="15dp"
+            android:paddingLeft="10dp"
+            android:id="@+id/strength_give"
+            android:background="@android:color/transparent"
+            android:hint="Enter Strengths" />
+
+    </android.support.design.widget.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@drawable/editextbackground">
+        <Spinner
+            android:singleLine="true"
+            android:id="@+id/business_type_give"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/colorPrimary" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="10dp"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/give_submit_button"
+        android:background="@drawable/btnbackground"
+        android:padding="15dp"
+        android:shadowColor="@android:color/transparent"
+        android:text="Submit" />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="100dp"/>
+</LinearLayout>
+       </LinearLayout>
+
+           <!--ask form strat-->
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:id="@+id/ask_form_layout">
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/colorPrimary"
+                   android:text="ENTER ASK"
+                   android:textStyle="italic"
+                   android:textSize="16sp"
+                   android:textAlignment="center"/>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="45dp"
+                   android:orientation="horizontal"
+                   android:weightSum="2"
+                   android:background="@drawable/editextbackground"
+                   android:layout_margin="@dimen/activity_horizontal_margin">
+
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_height="40dp"
+                       android:layout_margin="@dimen/activity_horizontal_margin"
+                       android:layout_weight="1"
+                       android:gravity="center_vertical"
+                       android:text="Date"
+                       android:textSize="15dp"
+                       android:layout_gravity="center_vertical"
+                       android:textColor="@color/colorPrimary" />
+
+                   <TextView
+                       android:id="@+id/date_ask"
+                       android:layout_width="0dp"
+                       android:layout_height="40dp"
+                       android:layout_weight="1"
+                       android:background="@null"
+                       android:gravity="center_vertical"
+                       android:hint="Select Date.."
+                       android:textSize="15dp"
+                       android:layout_gravity="center_vertical"
+                       android:textColor="#000"/>
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical">
+                   <android.support.design.widget.TextInputLayout
+                       android:layout_width="match_parent"
+                       android:background="@drawable/editextbackground"
+                       android:layout_height="match_parent"
+                       android:paddingLeft="10dp"
+                       android:layout_margin="@dimen/activity_horizontal_margin">
+
+                       <android.support.design.widget.TextInputEditText
+                           android:layout_width="match_parent"
+                           android:layout_height="40dp"
+                           android:singleLine="true"
+                           android:id="@+id/contactname_ask"
+                           android:textSize="15dp"
+                           android:background="@android:color/transparent"
+                           android:hint="Enter  Name" />
+
+                   </android.support.design.widget.TextInputLayout>
+
+
+
+                   <android.support.design.widget.TextInputLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:paddingLeft="10dp"
+                       android:background="@drawable/editextbackground"
+                       android:layout_margin="@dimen/activity_horizontal_margin">
+
+                       <android.support.design.widget.TextInputEditText
+                           android:layout_width="match_parent"
+                           android:layout_height="40dp"
+                           android:singleLine="true"
+                           android:background="@android:color/transparent"
+                           android:textSize="15dp"
+                           android:id="@+id/comanyname_ask"
+                           android:hint="Enter Company" />
+
+                   </android.support.design.widget.TextInputLayout>
+                   <android.support.design.widget.TextInputLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:paddingLeft="10dp"
+                       android:background="@drawable/editextbackground"
+                       android:layout_margin="@dimen/activity_horizontal_margin">
+
+                       <android.support.design.widget.TextInputEditText
+                           android:layout_width="match_parent"
+                           android:layout_height="40dp"
+                           android:singleLine="true"
+                           android:background="@android:color/transparent"
+                           android:textSize="15dp"
+                           android:id="@+id/category_ask"
+                           android:hint="Enter Category" />
+
+                   </android.support.design.widget.TextInputLayout>
+                   <!--<android.support.design.widget.TextInputLayout-->
+                       <!--android:layout_width="match_parent"-->
+                       <!--android:layout_height="match_parent"-->
+                       <!--android:background="@drawable/editextbackground"-->
+                       <!--android:layout_margin="@dimen/activity_horizontal_margin">-->
+
+                       <!--<android.support.design.widget.TextInputEditText-->
+                           <!--android:layout_width="match_parent"-->
+                           <!--android:layout_height="40dp"-->
+                           <!--android:singleLine="true"-->
+                           <!--android:textSize="15dp"-->
+                           <!--android:paddingLeft="10dp"-->
+                           <!--android:id="@+id/remarks_ask"-->
+                           <!--android:background="@android:color/transparent"-->
+                           <!--android:hint="Remarks" />-->
+
+                   <!--</android.support.design.widget.TextInputLayout>-->
+                   <Button
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="10dp"
+                       android:layout_marginTop="0dp"
+                       android:layout_marginRight="10dp"
+                       android:layout_margin="@dimen/activity_horizontal_margin"
+                       android:layout_marginBottom="10dp"
+                       android:id="@+id/ask_submit_button"
+                       android:background="@drawable/btnbackground"
+                       android:padding="15dp"
+                       android:shadowColor="@android:color/transparent"
+                       android:text="Submit" />
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="60dp"/>
+               </LinearLayout>
+           </LinearLayout>
+ </LinearLayout>
+</ScrollView>
+
+
+   </LinearLayout>
+
+</FrameLayout>
